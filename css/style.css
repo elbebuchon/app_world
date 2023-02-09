@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --border-radius:5px
+}
+
+*{
+    font-family: 'Raleway', sans-serif;
+}
+
+body#login {
+    background: url('../img/Bg.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+
+    #login main {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #login form{
+        background: #FFFFFF;
+        box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        width: 364px;
+        padding: 32px 35px 33px 35px;
+    }
+
+    #login form h1 {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        color: #000000;
+    }
+    #login form label {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        color: #000000;
+    }
+
+    #login form input{
+        background: #FFFFFF;
+        border: 1px solid #C6C6C6;
+        box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.18);
+        border-radius: 5px;
+    }
+
+    #login form button{
+        background: #374785;
+        border: 1px solid #24305E;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: #FFFFFF;
+        width: 100%;
+        height: 38px;
+    }
+
+    #login footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 44px;
+        background-color: #FFFFFF;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+
+    }
+
+    #login #copa{
+        display: none;
+    }
+
+
+    #map { height: calc(100vh - 56px); }
+
+    #navbar-map {
+        z-index: 1001;
+    }
+ 
+
+
+    #mapa select {
+        width: 326px;
+        height: 38px;
+        background: #FFFFFF;
+        border: 1px solid #C6C6C6;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 
+        inset 0px 0px 3px rgba(0, 0, 0, 0.18);
+        border-radius: 5px;
+        position: fixed;
+        z-index: 100000;
+        top: 86px;
+        left: 50%;
+        margin-left: -163px;
+        z-index: 1000;
+    }
+
+    #logo-grande {
+        margin-right: 1.5rem;
+    }
+
+     #la-scaloneta {
+        font-family: 'Raleway';
+        font-style: italic;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 20px;
+        color: #119DD8;
+        margin-right: 6rem;
+    }
+
+
+    #jugadores h1 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+   color: #212529;
+    text-align:  center;
+    margin: 3rem 0 2rem;
+}
+
+    #jugadores h1 span {
+        color: #119DD8;
+    }
+
+    #jugadores .card {
+        background: #FFFFFF;
+        border: 1px solid #EBEBEB;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 0px 0px 5px 5px;
+
+    }
+
+    #jugadores .card-title {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 28px;
+        line-height: 33px;
+        color: #212529;
+    }
+
+    #jugadores .card-text {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 15px;
+        color: #212529;
+    }
+
+    .boton {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        color: #FFFFFF;
+        background: #374785;
+        border: 1px solid #24305E;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        height: 33px;
+        width: 107px;
+    }
+        
+    #jugadores .card .img-wrapper {
+        height: 250px;
+        overflow: hidden;
+        position: relative;
+      }
+
+      #jugadores .card .img-wrapper span {
+        position: absolute;
+        top: 12px;
+        right: 16px;
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 28px;
+        line-height: 33px;
+        color: #ffffff;
+      }
+
+      #logo-g {
+        display: none;
+      }
+
+    @media screen and (max-width:500px) {
+        body#login {
+            background: transparent;
+        }
+        
+     
+
+        #login main {
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        #login #copa {
+            display: block;
+        }
+
+        #login form {
+            box-shadow: 0 0 0;
+        }       
+
+        #login footer {
+            position: static;
+            justify-content: center;
+        }
+        
+        #logo-grande{
+            display: none;
+
+        }
+
+        #logo-g {
+            display: block;
+            margin-right: 1rem;
+        }
+        
+    }
+
+    
